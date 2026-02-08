@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    /* High-Finance Light Theme - Warm whites, navy, gold accents */
+    --background: 40 20% 98%;
+    --foreground: 222 47% 11%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+ 
+    /* Primary: Deep Navy Slate */
+    --primary: 222 47% 15%;
+    --primary-foreground: 40 20% 98%;
+ 
+    /* Secondary: Warm Stone */
+    --secondary: 40 15% 93%;
+    --secondary-foreground: 222 47% 15%;
+ 
+    /* Muted: Soft Warm Gray */
+    --muted: 40 10% 92%;
+    --muted-foreground: 222 20% 40%;
+ 
+    /* Accent: Warm Gold */
+    --accent: 38 60% 50%;
+    --accent-foreground: 222 47% 11%;
+ 
+    /* Destructive: Deep Crimson */
+    --destructive: 0 70% 35%;
+    --destructive-foreground: 40 20% 98%;
+ 
+    /* Border & Input */
+    --border: 222 20% 85%;
+    --input: 222 20% 85%;
+    --ring: 38 60% 50%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    /* Dark mode - Deep navy with gold accents */
+    --background: 222 47% 8%;
+    --foreground: 40 20% 95%;
+ 
+    --card: 222 47% 11%;
+    --card-foreground: 40 20% 95%;
+ 
+    --popover: 222 47% 11%;
+    --popover-foreground: 40 20% 95%;
+ 
+    --primary: 40 20% 95%;
+    --primary-foreground: 222 47% 11%;
+ 
+    --secondary: 222 30% 18%;
+    --secondary-foreground: 40 20% 95%;
+ 
+    --muted: 222 30% 18%;
+    --muted-foreground: 40 15% 65%;
+ 
+    --accent: 38 60% 55%;
+    --accent-foreground: 222 47% 11%;
+ 
+    --destructive: 0 60% 40%;
+    --destructive-foreground: 40 20% 98%;
+ 
+    --border: 222 30% 22%;
+    --input: 222 30% 22%;
+    --ring: 38 60% 55%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Custom utilities for high-finance aesthetic */
+@layer utilities {
+  .text-gold {
+    color: hsl(38 60% 50%);
+  }
+  .border-gold {
+    border-color: hsl(38 60% 50%);
+  }
+  .bg-gold {
+    background-color: hsl(38 60% 50%);
+  }
+}

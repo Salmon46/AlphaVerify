@@ -1,5 +1,7 @@
 # AlphaVerify
 
+![Picture of the AlphaVerify Dashboard](image.png "AlphaVerify Dashboard")
+
 A comprehensive trading strategy verification and analysis platform.
 
 ## Features
